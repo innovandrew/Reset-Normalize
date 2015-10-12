@@ -1,0 +1,19 @@
+/*------------------------------------*\
+    BOX-SIZING
+\*------------------------------------*/
+
+// Ensure your pre-processor's autoprefix
+// features are turned on and configured.
+
+::root,
+html {
+    box-sizing: border-box;
+}
+
+* {
+    &,
+    &:before,
+    &:after {
+        box-sizing: inherit;
+    }
+}

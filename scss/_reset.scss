@@ -1,0 +1,89 @@
+/*------------------------------------*\
+	RESET
+\*------------------------------------*/
+
+/**
+ * Normally, this could be bad practice.
+ * If you plan to style these elements,
+ * stripping the default margins and
+ * paddings gives you a reasonable base
+ * to develop from.
+ *
+ * If you are not going to style these
+ * elements, do not use reset methods.
+ *
+ */
+
+ // I authored this in a way that allows
+ // you to remove or comment out elements
+ // which you do not plan to style.
+ 
+%reset {
+	margin: 0;
+	padding: 0;
+}
+
+::root,
+html,
+body {
+	@extend %reset;
+}
+
+// type
+h1, 
+h2, 
+h3, 
+h4,
+h5, 
+h6,
+p {
+	@extend %reset;
+}
+
+blockquote {
+	@extend %reset;
+}
+
+pre {
+	@extend %reset;
+}
+
+// ** CAREFUL **
+// Failing to style these elements properly
+// after resetting will cause accessibility
+// failures. I recommend removing most of the
+// declarations below from the reset.
+
+// list
+dl, 
+dd, 
+ol, 
+ul {
+	@extend %reset;
+}
+
+// form
+form, 
+fieldset, 
+legend {
+	@extend %reset;
+}
+
+// figure
+figure,
+figcaption {
+	@extend %reset;
+}
+
+// table
+table, 
+th, 
+td, 
+caption {
+	@extend %reset;
+}
+
+// horizontal rule
+hr {
+	@extend %reset;
+}
